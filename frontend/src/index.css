@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: theme('colors.olive.DEFAULT');
+  color: theme('colors.ink.DEFAULT');
+}
+
+/* Thin, quiet scrollbars fit the console aesthetic better than the browser default. */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: theme('colors.ink.DEFAULT');
+}
+::-webkit-scrollbar-thumb {
+  background: theme('colors.ink.border');
+  border-radius: 4px;
+}
